@@ -1,0 +1,120 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 230px;
+  background-color: #02085c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.toggle-btn {
+  background-color: transparent !important;
+  color: white !important;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 15px;
+}
+
+.toggle-btn:hover {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0 10px 16px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+  background-color: #3388ff;
+  color: white;
+}
+
+.menu-links a.active {
+  background-color: #0052c9;
+}
+
+.bottom-section {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.login-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-link:hover {
+  background-color: #3388ff;
+  color: white;
+}
+
+body {
+  background-color: #ffffff;
+  color: #02085c;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: #02085c !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #061080 !important;
+}
